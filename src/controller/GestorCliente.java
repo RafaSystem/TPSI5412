@@ -22,9 +22,14 @@ public class GestorCliente {
 		System.out.println("Insira o id do Cliente: ");
 		int id = sc.nextInt();
 		
-		for(Cliente cli : arCliente){
-			if(cli.getIdCliente() == id){
-				System.out.println(cli);
+		for(int i=0;i<=arCliente.get(i).getIdCliente();i++)
+		{
+			if(id==arCliente.get(i).getIdCliente()){
+				System.out.println("id do cliente: "+arCliente.get(i).getIdCliente());
+				System.out.println("nome do cliente: "+arCliente.get(i).getNome());
+				System.out.println("morada do cliente: "+arCliente.get(i).getMorada());
+				System.out.println("email do cliente: "+arCliente.get(i).getEmail());
+				System.out.println("telefone do cliente: "+arCliente.get(i).getTelefone());
 			}
 		}
 		

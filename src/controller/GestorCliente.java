@@ -19,11 +19,10 @@ public class GestorCliente {
 	
 	
 	public void procurarCliente(){
-		System.out.println("Insira o id do Cliente: ");
+		System.out.println("Insira o id do Cliente que quer procurar: ");
 		int id = sc.nextInt();
 		
-		for(int i=0;i<=arCliente.get(i).getIdCliente();i++)
-		{
+		for(int i=0;i<=arCliente.get(i).getIdCliente();i++){
 			if(id==arCliente.get(i).getIdCliente()){
 				System.out.println("id do cliente: "+arCliente.get(i).getIdCliente());
 				System.out.println("nome do cliente: "+arCliente.get(i).getNome());

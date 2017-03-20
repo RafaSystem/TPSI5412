@@ -14,19 +14,21 @@ public class PainelControlo {
 	
 public PainelControlo(){
 		
-		//Artigos
+		//Clientes
 		insCli = new InserirCliente();
 		gerCli = new GestorCliente();		
 		Cliente c = insCli.criarCliente();
-		gerCli.addCliente(c);	
+		gerCli.addCliente(c);
+
 		
 		
-		//Categorias
+		//Restaurante
 		insRes = new InserirRestaurante();
 		gerRes = new GestorRestaurante();
 		Restaurante r = insRes.criarRestaurante();
 		gerRes.addRestaurante(r);
 		
+		gerCli.procurarCliente();
 }
 	
 }
